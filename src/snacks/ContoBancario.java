@@ -1,3 +1,5 @@
+package snacks;
+
 public class ContoBancario {
     // characteristics
     private long accountNumber;
@@ -8,7 +10,7 @@ public class ContoBancario {
         return accountNumber;
     }
 
-    public void setAccountNumber(long accountNumber) {
+    private void setAccountNumber(long accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -16,9 +18,9 @@ public class ContoBancario {
         return accountBalance;
     }
 
-    // public void setAccountBalance() {
-    // this.accountBalance = accountBalance;
-    // }
+    private void setAccountBalance(double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
 
     // constructor
     public ContoBancario(long accountNumber) {
@@ -27,13 +29,13 @@ public class ContoBancario {
     }
 
     // method for deposits
-    public void deposit(float amount) {
+    public void deposit(double amount) {
         this.accountBalance += amount;
         this.accountBalance = Math.round(this.accountBalance * 100.0) / 100.0; // to round to 2 decimal places
     }
 
     // method for withdrawals
-    public void withdrawal(float amount) {
+    public void withdrawal(double amount) {
         this.accountBalance -= amount;
         this.accountBalance = Math.round(this.accountBalance * 100.0) / 100.0; // to round to 2 decimal places
     }

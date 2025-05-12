@@ -1,3 +1,5 @@
+package snacks;
+
 public class Studente {
 
     // characteristics
