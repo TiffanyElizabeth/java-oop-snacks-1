@@ -15,5 +15,13 @@ public class Main {
         test.withdrawal(100.20F);
         System.out.println(test.getAccountBalance());
 
+        // snack 3
+        RegistroStudente registry = new RegistroStudente();
+
+        registry.addStudent("John", "Smith", 20);
+
+        registry.addStudent("James", "Smith", 21);
+
+        registry.studentsList();
     }
 }
